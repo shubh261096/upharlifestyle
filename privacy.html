@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Uphar Lifestyle</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpeg" />
+  <meta name="description" content="Privacy policy for Uphar Lifestyle — how we handle your data." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0a0a0a;--text:#f5f5f5;--muted:#cfcfcf;--gold:#d4af37}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Montserrat',system-ui;background:var(--bg);color:var(--text)}
+    .header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.85);border-bottom:1px solid #151515}
+    .nav{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center;color:var(--gold);text-decoration:none}
+    .brand img{width:40px;height:40px;border-radius:6px;object-fit:cover}
+    .menu{display:flex;gap:20px}
+    .menu a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
+    .menu a:hover{background:#151515;color:#fff}
+    .hamb{display:none;background:none;border:0;color:#fff;font-size:22px}
+    @media (max-width:900px){.menu{position:fixed;inset:64px 12px auto 12px;background:rgba(18,18,18,.98);border:1px solid #222;border-radius:16px;padding:16px;display:none;flex-direction:column}.menu.show{display:flex}.hamb{display:inline-flex}}
+    .container{max-width:900px;margin:0 auto;padding:28px 20px}
+    h1{font-size:2rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+    h2{margin:18px 0 8px;font-size:1.1rem}
+    p{line-height:1.8;color:#dcdcdc;margin:8px 0}
+    ul{margin:8px 0 8px 18px;color:#dcdcdc}
+    footer{margin:36px 0 18px;text-align:center;color:#9c9c9c;font-size:.85rem}
+  </style>
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="index.html"><img src="logo.jpeg" alt="Uphar logo"><span>UPHAR LIFESTYLE</span></a>
+    <button class="hamb" aria-label="Toggle menu" onclick="document.querySelector('.menu').classList.toggle('show')">☰</button>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact us</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Privacy Policy</h1>
+  <p>Last updated: <span id="d"></span></p>
+  <p>We value your privacy. This policy explains what data we collect and how we use it when you visit our website or contact us via forms, phone, or WhatsApp.</p>
+
+  <h2>Information we collect</h2>
+  <ul>
+    <li>Contact details you submit (name, email, phone, message).</li>
+    <li>Basic analytics (pages visited, device, approximate location) to improve our site.</li>
+  </ul>
+
+  <h2>How we use information</h2>
+  <ul>
+    <li>To respond to your inquiries and provide our services.</li>
+    <li>To improve showroom operations and customer experience.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>We do not sell your data. We may share limited data with service providers strictly to operate the website or communications (e.g., email, hosting, analytics), bound by confidentiality.</p>
+
+  <h2>Data retention</h2>
+  <p>We keep personal information only as long as necessary for the purposes above or as required by law.</p>
+
+  <h2>Your rights</h2>
+  <p>You can request access, correction, or deletion of your personal data by emailing <a href="mailto:contact@upharlifestyle.com" style="color:#d4af37">contact@upharliefstyle.com</a></p>
+
+  <h2>WhatsApp</h2>
+  <p>If you message us on WhatsApp, your communications are subject to WhatsApp’s own policies. We will use your messages only to serve your request.</p>
+
+  <h2>Contact</h2>
+  <p>Uphar Lifestyle, 123 Fashion Street, Your City, PIN 000000 • <a href="tel:+918853160128" style="color:#d4af37">+91 8853160128</a></p>
+</main>
+
+<footer>
+  © <span id="y"></span> Uphar Lifestyle — Dulha Ghar
+</footer>
+<script>
+  const d=new Date(); document.getElementById('y').textContent=d.getFullYear();
+  document.getElementById('d').textContent=d.toLocaleDateString();
+</script>
+</body>
+</html>
