@@ -19,8 +19,15 @@
     .menu{display:flex;gap:20px}
     .menu a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
     .menu a:hover{background:#151515;color:#fff}
+    .cta-wa{
+      border:2px solid var(--gold); color:var(--gold); background:transparent;
+      padding:10px 14px; border-radius:10px; font-weight:700; text-decoration:none; letter-spacing:1px;
+      transition:.2s;
+    }
+    .cta-wa:hover{ background:var(--gold); color:#0a0a0a; box-shadow:0 10px 20px rgba(212,175,55,.24); transform:translateY(-2px) }
+
     .hamb{display:none;background:none;border:0;color:#fff;font-size:22px}
-    @media (max-width:900px){.menu{position:fixed;inset:64px 12px auto 12px;background:rgba(18,18,18,.98);border:1px solid #222;border-radius:16px;padding:16px;display:none;flex-direction:column}.menu.show{display:flex}.hamb{display:inline-flex}}
+    @media (max-width:900px){.menu{position:fixed;inset:64px 12px auto 12px;background:rgba(18,18,18,.98);border:1px solid #222;border-radius:16px;padding:16px;display:none;flex-direction:column}.menu.show{display:flex}.hamb{display:inline-flex}.cta-wa{display:block; text-align:center}}
     .container{max-width:1200px;margin:0 auto;padding:28px 20px}
     h1{font-size:2rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
     .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
@@ -46,7 +53,7 @@
       <a href="index.html">Home</a>
       <a href="contact.html">Contact us</a>
       <a href="privacy.html">Privacy</a>
-      <a class="btn" style="text-align:center" href="https://wa.me/0000000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a class="cta-wa" href="https://wa.me/918887693484" target="_blank" rel="noopener">Chat on WhatsApp</a>
     </div>
   </nav>
 </header>
@@ -66,10 +73,10 @@
       </form>
     </div>
     <div class="panel info">
-      <p><strong>Showroom</strong><br>Uphar Lifestyle, Kotwali Road Deoria UP 274001</p>
-      <p><strong>Phone</strong> <a href="tel:+918853160128">+91 8853160128</a></p>
+      <p><strong>Showroom</strong><br>UPHAR LIFESTYLE, SHOP NO 26 27 28, KOTWALI ROAD, KOTWALI ROAD, Deoria, Uttar Pradesh, 274001</p>
+      <p><strong>Phone</strong> <a href="tel:+918887693484">+91 8887693484</a></p>
       <p><strong>Email</strong> <a href="mailto:contact@upharlifestyle.com">contact@upharlifestyle.com</a></p>
-      <p><strong>WhatsApp</strong> <a href="https://wa.me/918853160128" target="_blank" rel="noopener">Chat now</a></p>
+      <p><strong>WhatsApp</strong> <a href="https://wa.me/918887693484" target="_blank" rel="noopener">Chat now</a></p>
       <p><strong>Hours</strong><br>Mon–Sun: 09:00 AM – 08:00 PM</p>
       <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3151!2d72.8777!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1710000000000">
@@ -79,7 +86,7 @@
 </main>
 
 <footer>
-  © <span id="y"></span> Uphar Lifestyle — Dulha Ghar
+  © <span id="y"></span> UPHAR LIFESTYLE
 </footer>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
