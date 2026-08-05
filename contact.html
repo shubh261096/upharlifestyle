@@ -1,91 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Uphar Lifestyle</title>
-  <link rel="icon" type="image/jpeg" href="logo.jpeg" />
-  <meta name="description" content="Contact Uphar Lifestyle — showroom address, phone, WhatsApp and hours." />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <style>
-    :root{--bg:#0a0a0a;--bg2:#121212;--text:#f5f5f5;--muted:#cfcfcf;--gold:#d4af37}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Montserrat',system-ui; background:var(--bg); color:var(--text)}
-    .header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.85);backdrop-filter:blur(8px);border-bottom:1px solid #151515}
-    .nav{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px;color:var(--gold);text-decoration:none}
-    .brand img{width:40px;height:40px;border-radius:6px;object-fit:cover}
-    .menu{display:flex;gap:20px}
-    .menu a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
-    .menu a:hover{background:#151515;color:#fff}
-    .cta-wa{
-      border:2px solid var(--gold); color:var(--gold); background:transparent;
-      padding:10px 14px; border-radius:10px; font-weight:700; text-decoration:none; letter-spacing:1px;
-      transition:.2s;
-    }
-    .cta-wa:hover{ background:var(--gold); color:#0a0a0a; box-shadow:0 10px 20px rgba(212,175,55,.24); transform:translateY(-2px) }
 
-    .hamb{display:none;background:none;border:0;color:#fff;font-size:22px}
-    @media (max-width:900px){.menu{position:fixed;inset:64px 12px auto 12px;background:rgba(18,18,18,.98);border:1px solid #222;border-radius:16px;padding:16px;display:none;flex-direction:column}.menu.show{display:flex}.hamb{display:inline-flex}.cta-wa{display:block; text-align:center}}
-    .container{max-width:1200px;margin:0 auto;padding:28px 20px}
-    h1{font-size:2rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    .panel{background:#0f0f0f;border:1px solid #1a1a1a;border-radius:16px;padding:18px}
-    label{display:block;margin:10px 0 6px;color:#ddd}
-    input,textarea{width:100%;padding:12px 14px;background:#111;border:1px solid #1f1f1f;border-radius:10px;color:#fff}
-    textarea{min-height:130px;resize:vertical}
-    .btn{margin-top:12px;background:transparent;color:var(--gold);border:2px solid var(--gold);padding:12px 18px;border-radius:12px;font-weight:700;letter-spacing:1px;cursor:pointer}
-    .btn:hover{background:var(--gold);color:#0a0a0a}
-    .info p{line-height:1.8;color:#dcdcdc}
-    .info a{color:var(--gold);text-decoration:none;border-bottom:1px dashed var(--gold)}
-    .map{border:0;width:100%;height:270px;border-radius:12px;filter:grayscale(.1) contrast(1.05)}
-    footer{margin:36px 0 18px;text-align:center;color:#9c9c9c;font-size:.85rem}
-  </style>
+  <title>Contact &amp; Directions — Uphar Lifestyle, Kotwali Road, Deoria</title>
+  <meta name="description" content="Visit Uphar Lifestyle on Kotwali Road, Deoria. Phone +91 88531 60128, WhatsApp, showroom hours 9 AM to 8 PM, map and directions." />
+  <link rel="canonical" href="https://upharlifestyle.com/contact.html" />
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.jpeg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uphar Lifestyle" />
+  <meta property="og:title" content="Contact &amp; Directions — Uphar Lifestyle, Deoria" />
+  <meta property="og:description" content="Showroom address, phone, WhatsApp, hours and map for Uphar Lifestyle on Kotwali Road, Deoria." />
+  <meta property="og:url" content="https://upharlifestyle.com/contact.html" />
+  <meta property="og:image" content="https://upharlifestyle.com/assets/img/sherwani_light.jpg" />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Deoria" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "@id": "https://upharlifestyle.com/#store",
+    "name": "Uphar Lifestyle",
+    "alternateName": "Dulha Ghar Deoria",
+    "url": "https://upharlifestyle.com/",
+    "telephone": "+918853160128",
+    "email": "contact@upharlifestyle.com",
+    "sameAs": [
+      "https://www.facebook.com/upharlifestyledeoria",
+      "https://www.instagram.com/uphar_kotwali_road_deoria",
+      "https://www.youtube.com/@Upharkotwaliroaddeoria"
+    ],
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No 26, 27, 28, Kotwali Road",
+      "addressLocality": "Deoria",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "274001",
+      "addressCountry": "IN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 26.501462, "longitude": 83.777506 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }]
+  }
+  </script>
 </head>
 <body>
+
 <header class="header">
   <nav class="nav">
-    <a class="brand" href="index.html"><img src="logo.jpeg" alt="Uphar logo"><span>UPHAR LIFESTYLE</span></a>
-    <button class="hamb" aria-label="Toggle menu" onclick="document.querySelector('.menu').classList.toggle('show')"><i class="fa-solid fa-bars"></i></button>
-    <div class="menu">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpeg" alt="Uphar Lifestyle logo — menswear showroom in Deoria" width="40" height="40" />
+      <span class="title">UPHAR LIFESTYLE</span>
+    </a>
+    <button class="hamb" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="menu" id="menu">
       <a href="index.html">Home</a>
-      <a href="contact.html">Contact us</a>
-      <a href="privacy.html">Privacy</a>
-      <a class="cta-wa" href="https://wa.me/918887693484" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a href="deoria-coat-pant-shop/">Coat Pant</a>
+      <a href="best-sherwani-shop-deoria/">Sherwani</a>
+      <a href="dulha-dress-deoria/">Dulha Dress</a>
+      <a href="contact.html" aria-current="page">Contact us</a>
+      <a class="cta-wa" href="https://wa.me/918853160128" target="_blank" rel="noopener">Chat on WhatsApp</a>
     </div>
   </nav>
 </header>
 
 <main class="container">
   <h1>Contact us</h1>
-  <div class="grid">
+  <p class="lp-sub">
+    Send us your requirement and wedding date on WhatsApp and we will reply with photographs,
+    available sizes and prices — or simply walk into the showroom on Kotwali Road.
+  </p>
+
+  <div class="grid-2" style="margin-top:24px">
     <div class="panel">
-      <form action="#" method="post" onsubmit="alert('Thanks! This demo form is not wired to a backend.'); return false;">
-        <label for="name">Name</label>
+      <!-- Submits straight to WhatsApp (see assets/js/site.js). No backend required. -->
+      <form onsubmit="return sendToWhatsApp(event)">
+        <label for="name">Your name</label>
         <input id="name" name="name" required />
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" />
+
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" />
+
+        <label for="need">What do you need?</label>
+        <input id="need" name="need" placeholder="e.g. groom sherwani, three-piece suit" />
+
+        <label for="date">Function date (if fixed)</label>
+        <input id="date" name="date" type="date" />
+
         <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Tell us what you’re looking for…"></textarea>
-        <button class="btn" type="submit">Send</button>
+        <textarea id="message" name="message" placeholder="Tell us your size, budget and colour preference…"></textarea>
+
+        <button class="btn btn-solid" type="submit"><i class="fa-brands fa-whatsapp"></i> Send on WhatsApp</button>
       </form>
+      <p style="color:#8a8a8a;font-size:.8rem;margin-top:12px">
+        This opens WhatsApp with your details filled in. Prefer to talk?
+        <a href="tel:+918853160128" style="color:#d4af37">Call +91 88531 60128</a>.
+      </p>
     </div>
+
     <div class="panel info">
-      <p><strong>Showroom</strong><br>UPHAR LIFESTYLE, SHOP NO 26 27 28, KOTWALI ROAD, KOTWALI ROAD, Deoria, Uttar Pradesh, 274001</p>
-      <p><strong>Phone</strong> <a href="tel:+918887693484">+91 8887693484</a></p>
+      <p><strong>Showroom</strong><br />Uphar Lifestyle<br />Shop No 26, 27, 28, Kotwali Road<br />Deoria, Uttar Pradesh 274001</p>
+      <p><strong>Phone</strong> <a href="tel:+918853160128">+91 88531 60128</a></p>
       <p><strong>Email</strong> <a href="mailto:contact@upharlifestyle.com">contact@upharlifestyle.com</a></p>
-      <p><strong>WhatsApp</strong> <a href="https://wa.me/918887693484" target="_blank" rel="noopener">Chat now</a></p>
-      <p><strong>Hours</strong><br>Mon–Sun: 09:00 AM – 08:00 PM</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.5800817655568!2d83.7775063754679!3d26.501462077642863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993c53e9114fd27%3A0x68e6b75fc4b54a7c!2sUphar%20Lifestyle%20Kotwali%20Road%20-%20Best%20Coat%20Pant%20Sherwani%20Shop%20Deoria%20%7C%7C%20Men&#39;s%20Wear%20%7C%7C%20Dulha%20Ghar%20in%20Deoria!5e0!3m2!1sen!2sus!4v1760613809349!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p><strong>WhatsApp</strong> <a href="https://wa.me/918853160128" target="_blank" rel="noopener">Chat now</a></p>
+      <p><strong>Hours</strong><br />Monday to Sunday: 09:00 AM – 08:00 PM</p>
+
+      <div class="contact-social">
+        <span class="label">Follow us</span>
+        <div class="social">
+          <a class="fb" href="https://www.facebook.com/upharlifestyledeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="ig" href="https://www.instagram.com/uphar_kotwali_road_deoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="yt" href="https://www.youtube.com/@Upharkotwaliroaddeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a class="wa" href="https://wa.me/918853160128" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <iframe class="map" style="margin-top:14px;height:300px"
+        src="https://www.google.com/maps?q=26.501462,83.777506&z=16&output=embed"
+        title="Uphar Lifestyle on Kotwali Road, Deoria — map"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
+
+  <section class="section" style="padding-left:0;padding-right:0">
+    <h2>How to reach us</h2>
+    <div class="prose">
+      <p>
+        We are on <strong>Kotwali Road</strong> in the middle of Deoria, a short auto ride from both
+        the Deoria bus stand and Deoria Sadar railway station. Customers regularly travel to us from
+        Barhaj, Rudrapur, Salempur, Bhatpar Rani, Gauri Bazar and Lar — and from Gorakhpur, roughly
+        55 km away on NH-28.
+      </p>
+      <p>
+        If you are coming from out of town for a fitting, message us before you travel so we can keep
+        the pieces in your size ready and reserve a trial room.
+      </p>
+    </div>
+  </section>
 </main>
 
 <footer>
-  © <span id="y"></span> UPHAR LIFESTYLE
+  <div class="footer-links">
+    <a href="deoria-coat-pant-shop/">Coat Pant Shop Deoria</a>
+    <a href="best-sherwani-shop-deoria/">Sherwani Shop Deoria</a>
+    <a href="dulha-dress-deoria/">Dulha Dress Deoria</a>
+    <a href="wedding-suits-deoria/">Wedding Suits Deoria</a>
+    <a href="engagement-dress-deoria/">Engagement Dress Deoria</a>
+  </div>
+  <div class="social">
+    <a class="fb" href="https://www.facebook.com/upharlifestyledeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="ig" href="https://www.instagram.com/uphar_kotwali_road_deoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="yt" href="https://www.youtube.com/@Upharkotwaliroaddeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  Uphar Lifestyle, Shop No 26, 27, 28, Kotwali Road, Deoria, Uttar Pradesh 274001<br />
+  <a href="tel:+918853160128">+91 88531 60128</a> •
+  <a href="https://wa.me/918853160128" target="_blank" rel="noopener">WhatsApp</a> •
+  <a href="privacy.html">Privacy policy</a><br />
+  © <span id="y">2026</span> UPHAR LIFESTYLE
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<div class="callbar">
+  <a class="wa" href="https://wa.me/918853160128" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+  <a class="tel" href="tel:+918853160128"><i class="fa-solid fa-phone"></i> Call now</a>
+</div>
+
+<script src="assets/js/site.js"></script>
 </body>
 </html>

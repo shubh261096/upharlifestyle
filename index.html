@@ -1,203 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Uphar Lifestyle — Dulha Ghar | Premium Menswear</title>
-  <link rel="icon" type="image/jpeg" href="logo.jpeg" />
-  <meta name="description" content="Uphar Lifestyle — Premium menswear showroom for suits, sherwanis and ethnic wear." />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <style>
-    :root{
-      --bg:#0a0a0a;--bg2:#121212;--text:#f5f5f5;--muted:#cfcfcf;--gold:#d4af37;--line:#1a1a1a;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-      background: var(--bg);
-      color: var(--text);
-      background-image:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%230a0a0a"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%231a1a1a" stroke-width="0.5"/></svg>');
-      background-attachment:fixed;
-    }
+  <title>Coat Pant &amp; Sherwani Shop in Deoria | Uphar Lifestyle — Dulha Ghar</title>
+  <meta name="description" content="Uphar Lifestyle on Kotwali Road, Deoria — coat pant, sherwani, jodhpuri, indo-western and wedding suits for men. Buy or rent. Open 7 days, 9 AM to 8 PM." />
+  <link rel="canonical" href="https://upharlifestyle.com/" />
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.jpeg" />
 
-    /* Header */
-    .header{
-      position:sticky;top:0;z-index:50;
-      background:rgba(10,10,10,.85);
-      backdrop-filter: blur(8px);
-      border-bottom:1px solid #151515;
-    }
-    .nav{
-      max-width: 1200px; margin:0 auto; padding:12px 20px;
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:12px; text-decoration:none;
-      color:var(--gold);
-    }
-    .brand img{width:40px;height:40px;border-radius:6px;object-fit:cover;filter:drop-shadow(0 6px 16px rgba(212,175,55,.25))}
-    .brand .title{font-weight:700;letter-spacing:2px}
-    .menu{
-      display:flex; align-items:center; gap:20px;
-    }
-    .menu a{
-      color:var(--muted); text-decoration:none; font-weight:600; letter-spacing:.8px;
-      padding:8px 10px; border-radius:8px; transition:.2s;
-    }
-    .menu a:hover{ color:var(--text); background:#151515;}
-    .cta-wa{
-      border:2px solid var(--gold); color:var(--gold); background:transparent;
-      padding:10px 14px; border-radius:10px; font-weight:700; text-decoration:none; letter-spacing:1px;
-      transition:.2s;
-    }
-    .cta-wa:hover{ background:var(--gold); color:#0a0a0a; box-shadow:0 10px 20px rgba(212,175,55,.24); transform:translateY(-2px) }
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uphar Lifestyle" />
+  <meta property="og:title" content="Coat Pant &amp; Sherwani Shop in Deoria | Uphar Lifestyle" />
+  <meta property="og:description" content="Deoria's Dulha Ghar on Kotwali Road — coat pant, sherwani, jodhpuri and wedding suits for men. Buy or rent." />
+  <meta property="og:url" content="https://upharlifestyle.com/" />
+  <meta property="og:image" content="https://upharlifestyle.com/assets/img/sherwani_light.jpg" />
+  <meta property="og:locale" content="en_IN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Deoria" />
 
-    /* Mobile menu */
-    .hamb{display:none; background:none; border:0; color:var(--text); font-size:22px}
-    @media (max-width:900px){
-      .menu{position:fixed; inset:60px 12px auto 12px; top:64px;
-        background:rgba(18,18,18,.98); border:1px solid #222; border-radius:16px;
-        padding:16px; flex-direction:column; align-items:stretch; gap:8px; display:none;}
-      .menu.show{display:flex;}
-      .cta-wa{display:block; text-align:center}
-      .hamb{display:inline-flex}
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    /* Hero */
-    .container{max-width:1200px;margin:0 auto;padding:28px 20px;}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;min-height:calc(100vh - 68px)}
-    .logo-img{width:132px;filter:drop-shadow(0 10px 24px rgba(212,175,55,.28))}
-    .logo{font-size:3rem;font-weight:700;letter-spacing:8px;color:var(--gold);text-transform:uppercase;position:relative;line-height:1.1;padding-bottom:12px}
-    .logo::after{content:'';position:absolute;left:0;bottom:0;width:120px;height:2px;background:var(--gold)}
-    .tagline{font-size:.95rem;letter-spacing:3px;color:#cfcfcf;text-transform:uppercase;margin-top:6px}
-    .lead{margin-top:18px;color:#e8e8e8;line-height:1.7}
-    .hero-actions{margin-top:20px;display:flex;gap:14px;flex-wrap:wrap}
-    .btn{
-      background:transparent;color:var(--gold);border:2px solid var(--gold);
-      padding:12px 18px;border-radius:12px;font-weight:700;letter-spacing:1px;text-decoration:none;transition:.25s;
-    }
-    .btn:hover{background:var(--gold);color:#0a0a0a;transform:translateY(-2px)}
-    .hero-figure{
-      border:1px solid #1a1a1a;border-radius:18px;overflow:hidden;background:#0f0f0f;
-      box-shadow:0 20px 40px rgba(0,0,0,.35)
-    }
-    .hero-figure img{width:100%;height:100%;object-fit:cover;display:block}
-
-    /* Gallery */
-    .section{padding:54px 20px}
-    .section h2{font-size:1.6rem;letter-spacing:2px;text-transform:uppercase;color:#f1f1f1;margin-bottom:18px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{position:relative;border:1px solid #1a1a1a;border-radius:16px;overflow:hidden;background:#0f0f0f}
-    .card img{width:100%;height:280px;object-fit:cover;display:block;filter:saturate(1.05)}
-    .card .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.75));padding:12px;font-weight:600;color:#f3f3f3}
-    @media (max-width:900px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr 1fr} }
-    @media (max-width:520px){ .logo{font-size:2rem;letter-spacing:6px} .grid{grid-template-columns:1fr} .card img{height:220px} }
-
-    /* Address / footer */
-    .address{margin-top:18px;line-height:1.7;color:#dcdcdc}
-    .address .label{display:block;font-size:.75rem;letter-spacing:2px;color:#b8b8b8;text-transform:uppercase;margin-bottom:6px}
-    .address a{color:var(--gold);text-decoration:none;border-bottom:1px dashed var(--gold)}
-    footer{margin:36px 0 18px;text-align:center;color:#9c9c9c;font-size:.85rem}
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "@id": "https://upharlifestyle.com/#store",
+    "name": "Uphar Lifestyle",
+    "alternateName": "Dulha Ghar Deoria",
+    "url": "https://upharlifestyle.com/",
+    "image": "https://upharlifestyle.com/assets/img/sherwani_light.jpg",
+    "logo": "https://upharlifestyle.com/assets/img/logo.jpeg",
+    "telephone": "+918853160128",
+    "email": "contact@upharlifestyle.com",
+    "sameAs": [
+      "https://www.facebook.com/upharlifestyledeoria",
+      "https://www.instagram.com/uphar_kotwali_road_deoria",
+      "https://www.youtube.com/@Upharkotwaliroaddeoria"
+    ],
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No 26, 27, 28, Kotwali Road",
+      "addressLocality": "Deoria",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "274001",
+      "addressCountry": "IN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 26.501462, "longitude": 83.777506 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }],
+    "areaServed": [
+      {"@type":"City","name":"Deoria"},
+      {"@type":"City","name":"Barhaj"},
+      {"@type":"City","name":"Rudrapur"},
+      {"@type":"City","name":"Salempur"},
+      {"@type":"City","name":"Bhatpar Rani"},
+      {"@type":"City","name":"Gauri Bazar"}
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav">
-      <a class="brand" href="index.html">
-        <img src="logo.jpeg" alt="Uphar Lifestyle logo" />
-        <span class="title">UPHAR LIFESTYLE</span>
-      </a>
 
-      <button class="hamb" aria-label="Toggle menu" onclick="document.querySelector('.menu').classList.toggle('show')">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpeg" alt="Uphar Lifestyle logo — menswear showroom in Deoria" width="40" height="40" />
+      <span class="title">UPHAR LIFESTYLE</span>
+    </a>
+    <button class="hamb" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="menu" id="menu">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="deoria-coat-pant-shop/">Coat Pant</a>
+      <a href="best-sherwani-shop-deoria/">Sherwani</a>
+      <a href="dulha-dress-deoria/">Dulha Dress</a>
+      <a href="contact.html">Contact us</a>
+      <a class="cta-wa" href="https://wa.me/918853160128" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </nav>
+</header>
 
-      <div class="menu" id="menu">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact us</a>
-        <a href="privacy.html">Privacy</a>
-        <a class="cta-wa" href="https://wa.me/918887693484" target="_blank" rel="noopener">Chat on WhatsApp</a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <main class="container">
-    <section class="hero">
-      <div>
-        <img class="logo-img" src="logo.jpeg" alt="Uphar Lifestyle mark" />
-        <h1 class="logo">Dulha Ghar</h1>
-        <p class="tagline">Premium Suits • Sherwanis • Ethnic Menswear</p>
-        <p class="lead">
-          Crafted silhouettes, fine fabrics, and impeccable detailing for weddings, celebrations and everything in between.
-          Visit our showroom or message us to curate your look.
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="https://wa.me/918887693484" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
-          <a class="btn" href="contact.html">Visit / Contact</a>
-        </div>
-
-        <div class="address">
-          <span class="label">Showroom</span>
-          UPHAR LIFESTYLE, SHOP NO 26 27 28, KOTWALI ROAD, KOTWALI ROAD, Deoria, Uttar Pradesh, 274001<br/>
-          <a href="tel:+918887693484">+91 8887693484</a> • <a href="mailto:contact@uphar.example">contact@uphar.example</a>
-        </div>
+<main class="container">
+  <section class="hero">
+    <div>
+      <img class="logo-img" src="assets/img/logo.jpeg" alt="Uphar Lifestyle brand mark" width="132" />
+      <h1 class="logo">Dulha Ghar</h1>
+      <p class="tagline">Premium Suits • Sherwanis • Ethnic Menswear</p>
+      <p class="lead">
+        Crafted silhouettes, fine fabrics and impeccable detailing for weddings, celebrations
+        and everything in between. Deoria's groom-wear destination on Kotwali Road — available
+        to <strong>buy or rent</strong>. Visit our showroom or message us to curate your look.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="https://wa.me/918853160128" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp us</a>
+        <a class="btn" href="contact.html">Visit / Contact</a>
       </div>
 
-      <figure class="hero-figure">
-        <!-- Replace these with your own images -->
-        <img src="sherwani_light.jpg" alt="Sherwani" />
-      </figure>
-    </section>
-
-    <!-- Featured looks -->
-    <section class="section">
-      <h2>Featured looks</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="tuxedo.jpg" alt="Black Tuxedo" />
-          <div class="cap">Black Tuxedo</div>
-        </div>
-        <div class="card">
-          <img src="sherwani.jpg" alt="Ivory Sherwani" />
-          <div class="cap">Ivory Sherwani</div>
-        </div>
-        <div class="card">
-          <img src="three_piece.jpg" alt="Classic Three-Piece" />
-          <div class="cap">Classic Three-Piece</div>
-        </div>
-        <div class="card">
-          <img src="jodhpuri.png" alt="Bandhgala" />
-          <div class="cap">Jodhpuri</div>
-        </div>
-        <div class="card">
-          <img src="indo.png" alt="Reception Suit" />
-          <div class="cap">Three Piece Kurta Set</div>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1200&auto=format&fit=crop" alt="Five Piece Suit" />
-          <div class="cap">Five Piece Suit</div>
+      <div class="hero-social">
+        <span class="label">Follow us</span>
+        <div class="social">
+          <a class="fb" href="https://www.facebook.com/upharlifestyledeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Facebook" title="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a class="ig" href="https://www.instagram.com/uphar_kotwali_road_deoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Instagram" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="yt" href="https://www.youtube.com/@Upharkotwaliroaddeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on YouTube" title="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a class="wa" href="https://wa.me/918853160128" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on WhatsApp" title="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    © <span id="y"></span> UPHAR LIFESTYLE • <a href="privacy.html" style="color:#d4af37;text-decoration:none;border-bottom:1px dashed #d4af37;">Privacy policy</a>
-  </footer>
+      <div class="address">
+        <span class="label">Showroom</span>
+        Uphar Lifestyle, Shop No 26, 27, 28, Kotwali Road, Deoria, Uttar Pradesh, 274001<br />
+        <a href="tel:+918853160128">+91 88531 60128</a> •
+        <a href="mailto:contact@upharlifestyle.com">contact@upharlifestyle.com</a>
+      </div>
+    </div>
 
-  <script>
-    // mobile menu close on nav click
-    document.querySelectorAll('.menu a').forEach(a=>{
-      a.addEventListener('click',()=>document.querySelector('.menu').classList.remove('show'));
-    });
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+    <figure class="hero-figure">
+      <img src="assets/img/sherwani_light.jpg" alt="Ivory embroidered sherwani for grooms at Uphar Lifestyle, Deoria" />
+    </figure>
+  </section>
+
+  <section class="section" style="padding-left:0;padding-right:0">
+    <h2>Featured looks</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/img/tuxedo.jpg" alt="Black tuxedo for reception and cocktail events, Deoria" loading="lazy" />
+        <div class="cap">Black Tuxedo</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/sherwani.jpg" alt="Ivory groom sherwani with embroidery, Uphar Lifestyle Deoria" loading="lazy" />
+        <div class="cap">Ivory Sherwani</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/three_piece.jpg" alt="Classic three-piece suit for men, Deoria" loading="lazy" />
+        <div class="cap">Classic Three-Piece</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/jodhpuri.png" alt="Jodhpuri bandhgala suit for weddings, Deoria" loading="lazy" />
+        <div class="cap">Jodhpuri</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/indo.png" alt="Indo-western three piece kurta set for men, Deoria" loading="lazy" />
+        <div class="cap">Three Piece Kurta Set</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Occasion wear -->
+  <section class="section" style="padding-left:0;padding-right:0">
+    <h2>Dressed for every function</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/img/stock/rack-suits-wardrobe.jpg" alt="Rail of men's suit jackets in grey, blue and navy" loading="lazy" />
+        <div class="cap">Suits on the Rail</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/stock/sherwani-white-red-dupatta.jpg" alt="White chikankari groom sherwani with maroon embroidered dupatta" loading="lazy" />
+        <div class="cap">Sherwani &amp; Dupatta</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/stock/hang-black-suit-door.jpg" alt="Black tuxedo jacket and white dress shirt on a hanger" loading="lazy" />
+        <div class="cap">Reception Tuxedo</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/stock/turban-red-with-mojari.jpg" alt="Red velvet safa with kalgi beside cream embroidered mojari" loading="lazy" />
+        <div class="cap">Safa &amp; Mojari</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/stock/flatlay-groom-attire-full.jpg" alt="Complete dulha outfit laid out with sherwani, safa, mojari and mala" loading="lazy" />
+        <div class="cap">The Complete Dulha Set</div>
+      </div>
+      <div class="card">
+        <img src="assets/img/stock/tailoring-workbench.jpg" alt="Tailoring bench with measuring tape, folded cloth and sewing tools" loading="lazy" />
+        <div class="cap">In-house Alterations</div>
+      </div>
+    </div>
+    <p class="stock-note">
+      Some images above are representative of the styles, fabrics and colour families we carry rather than photographs of current stock. Inventory changes regularly.
+      <a href="https://wa.me/918853160128" target="_blank" rel="noopener">Message us on WhatsApp</a>
+      for photographs of what is on the floor today.
+    </p>
+  </section>
+
+  <section class="section" style="padding-left:0;padding-right:0">
+    <h2>What are you shopping for?</h2>
+    <div class="related">
+      <a href="deoria-coat-pant-shop/">Coat Pant Shop in Deoria<span>Two-piece, three-piece and blazers for office, party and wedding</span></a>
+      <a href="best-sherwani-shop-deoria/">Sherwani Shop in Deoria<span>Groom sherwanis with dupatta, safa and mojari — buy or rent</span></a>
+      <a href="dulha-dress-deoria/">Dulha Dress in Deoria<span>Complete groom outfits for every wedding function</span></a>
+      <a href="wedding-suits-deoria/">Wedding Suits in Deoria<span>Tuxedos, jodhpuri and reception suits</span></a>
+      <a href="engagement-dress-deoria/">Engagement Dress in Deoria<span>Ring-ceremony looks that photograph well</span></a>
+      <a href="contact.html">Visit the Showroom<span>Kotwali Road, Deoria — directions, hours and map</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="deoria-coat-pant-shop/">Coat Pant Shop Deoria</a>
+    <a href="best-sherwani-shop-deoria/">Sherwani Shop Deoria</a>
+    <a href="dulha-dress-deoria/">Dulha Dress Deoria</a>
+    <a href="wedding-suits-deoria/">Wedding Suits Deoria</a>
+    <a href="engagement-dress-deoria/">Engagement Dress Deoria</a>
+  </div>
+  <div class="social">
+    <a class="fb" href="https://www.facebook.com/upharlifestyledeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="ig" href="https://www.instagram.com/uphar_kotwali_road_deoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="yt" href="https://www.youtube.com/@Upharkotwaliroaddeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  Uphar Lifestyle, Shop No 26, 27, 28, Kotwali Road, Deoria, Uttar Pradesh 274001<br />
+  <a href="tel:+918853160128">+91 88531 60128</a> •
+  <a href="https://wa.me/918853160128" target="_blank" rel="noopener">WhatsApp</a> •
+  <a href="privacy.html">Privacy policy</a><br />
+  © <span id="y">2026</span> UPHAR LIFESTYLE
+</footer>
+
+<div class="callbar">
+  <a class="wa" href="https://wa.me/918853160128" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+  <a class="tel" href="tel:+918853160128"><i class="fa-solid fa-phone"></i> Call now</a>
+</div>
+
+<script src="assets/js/site.js"></script>
 </body>
 </html>

@@ -1,85 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Privacy Policy — Uphar Lifestyle</title>
-  <link rel="icon" type="image/jpeg" href="logo.jpeg" />
-  <meta name="description" content="Privacy policy for Uphar Lifestyle — how we handle your data." />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#0a0a0a;--text:#f5f5f5;--muted:#cfcfcf;--gold:#d4af37}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Montserrat',system-ui;background:var(--bg);color:var(--text)}
-    .header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.85);border-bottom:1px solid #151515}
-    .nav{max-width:1200px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;gap:12px;align-items:center;color:var(--gold);text-decoration:none}
-    .brand img{width:40px;height:40px;border-radius:6px;object-fit:cover}
-    .menu{display:flex;gap:20px}
-    .menu a{color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
-    .menu a:hover{background:#151515;color:#fff}
-    .hamb{display:none;background:none;border:0;color:#fff;font-size:22px}
-    @media (max-width:900px){.menu{position:fixed;inset:64px 12px auto 12px;background:rgba(18,18,18,.98);border:1px solid #222;border-radius:16px;padding:16px;display:none;flex-direction:column}.menu.show{display:flex}.hamb{display:inline-flex}}
-    .container{max-width:900px;margin:0 auto;padding:28px 20px}
-    h1{font-size:2rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
-    h2{margin:18px 0 8px;font-size:1.1rem}
-    p{line-height:1.8;color:#dcdcdc;margin:8px 0}
-    ul{margin:8px 0 8px 18px;color:#dcdcdc}
-    footer{margin:36px 0 18px;text-align:center;color:#9c9c9c;font-size:.85rem}
-  </style>
+  <meta name="description" content="Privacy policy for Uphar Lifestyle, Deoria — what data we collect and how we use it." />
+  <link rel="canonical" href="https://upharlifestyle.com/privacy.html" />
+  <link rel="icon" type="image/jpeg" href="assets/img/logo.jpeg" />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+
 <header class="header">
   <nav class="nav">
-    <a class="brand" href="index.html"><img src="logo.jpeg" alt="Uphar logo"><span>UPHAR LIFESTYLE</span></a>
-    <button class="hamb" aria-label="Toggle menu" onclick="document.querySelector('.menu').classList.toggle('show')">☰</button>
-    <div class="menu">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.jpeg" alt="Uphar Lifestyle logo — menswear showroom in Deoria" width="40" height="40" />
+      <span class="title">UPHAR LIFESTYLE</span>
+    </a>
+    <button class="hamb" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="menu" id="menu">
       <a href="index.html">Home</a>
+      <a href="deoria-coat-pant-shop/">Coat Pant</a>
+      <a href="best-sherwani-shop-deoria/">Sherwani</a>
+      <a href="dulha-dress-deoria/">Dulha Dress</a>
       <a href="contact.html">Contact us</a>
-      <a href="privacy.html">Privacy</a>
+      <a class="cta-wa" href="https://wa.me/918853160128" target="_blank" rel="noopener">Chat on WhatsApp</a>
     </div>
   </nav>
 </header>
 
-<main class="container">
+<main class="container narrow">
   <h1>Privacy Policy</h1>
-  <p>Last updated: <span id="d"></span></p>
-  <p>We value your privacy. This policy explains what data we collect and how we use it when you visit our website or contact us via forms, phone, or WhatsApp.</p>
+  <div class="prose">
+    <p>Last updated: <span id="d"></span></p>
+    <p>
+      We value your privacy. This policy explains what data we collect and how we use it when you
+      visit our website or contact us by form, phone or WhatsApp.
+    </p>
 
-  <h2>Information we collect</h2>
-  <ul>
-    <li>Contact details you submit (name, email, phone, message).</li>
-    <li>Basic analytics (pages visited, device, approximate location) to improve our site.</li>
-  </ul>
+    <h2>Information we collect</h2>
+    <ul>
+      <li>Contact details you submit (name, email, phone, message).</li>
+      <li>Basic analytics (pages visited, device, approximate location) to improve our site.</li>
+    </ul>
 
-  <h2>How we use information</h2>
-  <ul>
-    <li>To respond to your inquiries and provide our services.</li>
-    <li>To improve showroom operations and customer experience.</li>
-  </ul>
+    <h2>How we use information</h2>
+    <ul>
+      <li>To respond to your enquiries and provide our services.</li>
+      <li>To improve showroom operations and customer experience.</li>
+    </ul>
 
-  <h2>Sharing</h2>
-  <p>We do not sell your data. We may share limited data with service providers strictly to operate the website or communications (e.g., email, hosting, analytics), bound by confidentiality.</p>
+    <h2>Sharing</h2>
+    <p>
+      We do not sell your data. We may share limited data with service providers strictly to operate
+      the website or communications (for example email, hosting, analytics), bound by confidentiality.
+    </p>
 
-  <h2>Data retention</h2>
-  <p>We keep personal information only as long as necessary for the purposes above or as required by law.</p>
+    <h2>Data retention</h2>
+    <p>We keep personal information only as long as necessary for the purposes above or as required by law.</p>
 
-  <h2>Your rights</h2>
-  <p>You can request access, correction, or deletion of your personal data by emailing <a href="mailto:contact@upharlifestyle.com" style="color:#d4af37">contact@upharliefstyle.com</a></p>
+    <h2>Your rights</h2>
+    <p>
+      You can request access, correction or deletion of your personal data by emailing
+      <a href="mailto:contact@upharlifestyle.com">contact@upharlifestyle.com</a>.
+    </p>
 
-  <h2>WhatsApp</h2>
-  <p>If you message us on WhatsApp, your communications are subject to WhatsApp’s own policies. We will use your messages only to serve your request.</p>
+    <h2>WhatsApp</h2>
+    <p>
+      If you message us on WhatsApp, your communications are subject to WhatsApp's own policies.
+      We will use your messages only to serve your request.
+    </p>
 
-  <h2>Contact</h2>
-  <p>UPHAR LIFESTYLE, SHOP NO 26 27 28, KOTWALI ROAD, KOTWALI ROAD, Deoria, Uttar Pradesh, 274001 • <a href="tel:+918887693484" style="color:#d4af37">+91 8887693484</a></p>
+    <h2>Contact</h2>
+    <p>
+      Uphar Lifestyle, Shop No 26, 27, 28, Kotwali Road, Deoria, Uttar Pradesh, 274001 •
+      <a href="tel:+918853160128">+91 88531 60128</a>
+    </p>
+  </div>
 </main>
 
 <footer>
-  © <span id="y"></span> UPHAR LIFESTYLE
+  <div class="social">
+    <a class="fb" href="https://www.facebook.com/upharlifestyledeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="ig" href="https://www.instagram.com/uphar_kotwali_road_deoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a class="yt" href="https://www.youtube.com/@Upharkotwaliroaddeoria" target="_blank" rel="noopener" aria-label="Uphar Lifestyle on YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  Uphar Lifestyle, Shop No 26, 27, 28, Kotwali Road, Deoria, Uttar Pradesh 274001<br />
+  <a href="tel:+918853160128">+91 88531 60128</a> •
+  <a href="https://wa.me/918853160128" target="_blank" rel="noopener">WhatsApp</a> •
+  <a href="privacy.html">Privacy policy</a><br />
+  © <span id="y">2026</span> UPHAR LIFESTYLE
 </footer>
-<script>
-  const d=new Date(); document.getElementById('y').textContent=d.getFullYear();
-  document.getElementById('d').textContent=d.toLocaleDateString();
-</script>
+
+<script src="assets/js/site.js"></script>
 </body>
 </html>

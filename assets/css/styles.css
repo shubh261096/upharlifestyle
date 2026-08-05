@@ -1,0 +1,281 @@
+:root{
+  --bg:#0a0a0a;--bg2:#121212;--panel:#0f0f0f;
+  --text:#f5f5f5;--muted:#cfcfcf;--dim:#9c9c9c;
+  --gold:#d4af37;--line:#1a1a1a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{min-height:100%}
+body{
+  font-family:'Montserrat',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  background-image:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%230a0a0a"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%231a1a1a" stroke-width="0.5"/></svg>');
+  background-attachment:fixed;
+}
+img{max-width:100%;height:auto}
+/* Long emails / URLs must wrap rather than force horizontal scroll on phones */
+p,li,td,th,h1,h2,h3,a,span{overflow-wrap:break-word}
+
+/* ---------- Header ---------- */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(10,10,10,.85);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid #151515;
+}
+.nav{
+  max-width:1200px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--gold)}
+.brand img{width:40px;height:40px;border-radius:6px;object-fit:cover;filter:drop-shadow(0 6px 16px rgba(212,175,55,.25))}
+.brand .title{font-weight:700;letter-spacing:2px}
+.menu{display:flex;align-items:center;gap:20px}
+.menu a{
+  color:var(--muted);text-decoration:none;font-weight:600;letter-spacing:.8px;
+  padding:8px 10px;border-radius:8px;transition:.2s;
+}
+.menu a:hover,.menu a[aria-current="page"]{color:var(--text);background:#151515}
+.cta-wa{
+  border:2px solid var(--gold);color:var(--gold);background:transparent;
+  padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;letter-spacing:1px;
+  transition:.2s;
+}
+.cta-wa:hover{background:var(--gold);color:#0a0a0a;box-shadow:0 10px 20px rgba(212,175,55,.24);transform:translateY(-2px)}
+.hamb{display:none;background:none;border:0;color:var(--text);font-size:22px;cursor:pointer}
+
+/* ---------- Layout ---------- */
+.container{max-width:1200px;margin:0 auto;padding:28px 20px}
+.container.narrow{max-width:900px}
+.section{padding:54px 20px}
+.section h2{font-size:1.6rem;letter-spacing:2px;text-transform:uppercase;color:#f1f1f1;margin-bottom:18px}
+h1{font-size:2rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.btn{
+  display:inline-block;background:transparent;color:var(--gold);border:2px solid var(--gold);
+  padding:12px 18px;border-radius:12px;font-weight:700;letter-spacing:1px;
+  text-decoration:none;transition:.25s;cursor:pointer;
+}
+.btn:hover{background:var(--gold);color:#0a0a0a;transform:translateY(-2px)}
+.btn-solid{background:var(--gold);color:#0a0a0a}
+.btn-solid:hover{background:#e6c352}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+
+/* ---------- Home hero ---------- */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;min-height:calc(100vh - 68px)}
+.logo-img{width:132px;filter:drop-shadow(0 10px 24px rgba(212,175,55,.28))}
+.logo{font-size:3rem;font-weight:700;letter-spacing:8px;color:var(--gold);text-transform:uppercase;position:relative;line-height:1.1;padding-bottom:12px}
+.logo::after{content:'';position:absolute;left:0;bottom:0;width:120px;height:2px;background:var(--gold)}
+.tagline{font-size:.95rem;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:6px}
+.lead{margin-top:18px;color:#e8e8e8;line-height:1.7}
+.hero-actions{margin-top:20px;display:flex;gap:14px;flex-wrap:wrap}
+.hero-figure{
+  border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);
+  box-shadow:0 20px 40px rgba(0,0,0,.35)
+}
+.hero-figure img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ---------- Card grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.card{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel)}
+.card img{width:100%;height:280px;object-fit:cover;display:block;filter:saturate(1.05)}
+.card .cap{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.75));padding:12px;font-weight:600;color:#f3f3f3}
+
+/* ---------- Landing pages ---------- */
+.crumbs{font-size:.8rem;letter-spacing:1px;color:var(--dim);padding:16px 20px 0;max-width:1200px;margin:0 auto;text-transform:uppercase}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--gold)}
+.crumbs span{margin:0 6px;color:#555}
+
+.lp-hero{padding:34px 0 8px}
+.lp-hero h1{font-size:2.1rem;letter-spacing:2px;line-height:1.25;text-transform:none}
+.lp-sub{margin-top:12px;color:#e8e8e8;line-height:1.75;font-size:1.02rem;max-width:70ch}
+.lp-actions{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap}
+
+.prose{max-width:72ch}
+.prose h2{font-size:1.35rem;letter-spacing:1px;color:var(--gold);text-transform:none;margin:34px 0 12px}
+.prose h3{font-size:1.05rem;color:#f1f1f1;margin:22px 0 8px}
+.prose p{line-height:1.85;color:#dcdcdc;margin:10px 0}
+.prose ul,.prose ol{margin:12px 0 12px 20px;color:#dcdcdc;line-height:1.8}
+.prose li{margin:6px 0}
+.prose a{color:var(--gold);text-decoration:none;border-bottom:1px dashed var(--gold)}
+.prose strong{color:#f3f3f3}
+
+/* Price / spec table */
+.spec{width:100%;border-collapse:collapse;margin:18px 0;font-size:.95rem}
+.spec th,.spec td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);color:#dcdcdc}
+.spec th{color:var(--gold);font-weight:700;letter-spacing:.5px;text-transform:uppercase;font-size:.76rem}
+.spec tr:last-child td{border-bottom:0}
+
+/* Trust strip */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}
+.trust div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+.trust .k{color:var(--gold);font-weight:700;font-size:1.05rem;display:block;margin-bottom:4px}
+.trust .v{color:var(--muted);font-size:.84rem;line-height:1.5}
+
+/* FAQ */
+.faq details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.faq summary{cursor:pointer;font-weight:600;color:#f1f1f1;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:'+ ';color:var(--gold);font-weight:700}
+.faq details[open] summary::before{content:'– '}
+.faq details p{margin-top:10px;color:#dcdcdc;line-height:1.8}
+
+/* Sibling page links */
+.related{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.related a{
+  display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:16px;text-decoration:none;color:#f1f1f1;font-weight:600;transition:.2s;
+}
+.related a:hover{border-color:var(--gold);transform:translateY(-2px)}
+.related a span{display:block;margin-top:6px;font-weight:400;font-size:.84rem;color:var(--dim)}
+
+/* ---------- Social links ---------- */
+.social{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.social a{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:var(--panel);
+  color:var(--muted);font-size:1.02rem;text-decoration:none;
+  transition:.22s;
+}
+.social a:hover{transform:translateY(-2px);color:#fff}
+.social a.fb:hover{background:#1877f2;border-color:#1877f2}
+.social a.ig:hover{background:#d6249f;border-color:#d6249f}
+.social a.yt:hover{background:#ff0000;border-color:#ff0000}
+.social a.wa:hover{background:#25d366;border-color:#25d366}
+
+/* Hero placement, under the Visit / Contact buttons */
+.hero-social{margin-top:24px}
+.hero-social .label{
+  display:block;font-size:.72rem;letter-spacing:2px;color:#b8b8b8;
+  text-transform:uppercase;margin-bottom:10px;
+}
+
+/* Footer placement */
+footer .social{justify-content:center;margin:0 0 24px}
+footer .social a{border-bottom:0}
+
+/* Contact page info panel placement */
+.contact-social{margin:18px 0 4px}
+.contact-social .label{
+  display:block;font-size:.72rem;letter-spacing:2px;color:#b8b8b8;
+  text-transform:uppercase;margin-bottom:10px;
+}
+.contact-social .social a{border-bottom:0}
+
+/* Representative-image disclosure under stock galleries */
+.stock-note{color:#7e7e7e;font-size:.76rem;margin-top:14px;line-height:1.6}
+
+/* Sticky mobile call bar */
+.callbar{display:none}
+
+/* ---------- Contact / info ---------- */
+label{display:block;margin:10px 0 6px;color:#ddd}
+input,textarea{width:100%;padding:12px 14px;background:#111;border:1px solid #1f1f1f;border-radius:10px;color:#fff;font-family:inherit}
+textarea{min-height:130px;resize:vertical}
+.info p{line-height:1.8;color:#dcdcdc}
+.info a{color:var(--gold);text-decoration:none;border-bottom:1px dashed var(--gold)}
+.map{border:0;width:100%;height:270px;border-radius:12px;filter:grayscale(.1) contrast(1.05)}
+.address{margin-top:18px;line-height:1.7;color:#dcdcdc}
+.address .label{display:block;font-size:.75rem;letter-spacing:2px;color:#b8b8b8;text-transform:uppercase;margin-bottom:6px}
+.address a{color:var(--gold);text-decoration:none;border-bottom:1px dashed var(--gold)}
+
+footer{
+  max-width:1200px;
+  margin:64px auto 0;
+  padding:36px 20px 52px;
+  border-top:1px solid var(--line);
+  text-align:center;
+  color:var(--dim);
+  font-size:.85rem;
+  line-height:2.5;          /* opens up the <br>-separated address, phone and copyright lines */
+}
+footer a{color:var(--gold);text-decoration:none;border-bottom:1px dashed var(--gold)}
+footer a:hover{color:#e6c352}
+
+/* Page links row — spaced out and separated from the address block below */
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px 28px;
+  margin:0 0 30px;
+  padding-bottom:26px;
+  border-bottom:1px solid var(--line);
+  line-height:1.7;
+}
+.footer-links a{border-bottom:0;color:var(--muted);margin:0;font-size:.82rem;letter-spacing:.4px}
+.footer-links a:hover{color:var(--gold)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .menu{
+    position:fixed;inset:64px 12px auto 12px;
+    background:rgba(18,18,18,.98);border:1px solid #222;border-radius:16px;
+    padding:16px;flex-direction:column;align-items:stretch;gap:8px;display:none;
+  }
+  .menu.show{display:flex}
+  .cta-wa{display:block;text-align:center}
+  .hamb{display:inline-flex}
+  .hero,.grid-2{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr}
+  .trust,.related{grid-template-columns:1fr 1fr}
+  .callbar{
+    display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    background:rgba(10,10,10,.96);border-top:1px solid #222;padding:10px 12px;gap:10px;
+    backdrop-filter:blur(8px);
+  }
+  .callbar a{
+    flex:1;text-align:center;padding:12px;border-radius:10px;font-weight:700;
+    text-decoration:none;letter-spacing:.5px;font-size:.92rem;
+  }
+  .callbar .wa{background:#25d366;color:#062d14}
+  .callbar .tel{border:2px solid var(--gold);color:var(--gold)}
+  body{padding-bottom:70px}
+}
+/* Tablet / large phone: tighten the comparison tables before they get cramped */
+@media (max-width:640px){
+  .spec{font-size:.87rem}
+  .spec th,.spec td{padding:9px 8px}
+  .prose h2{font-size:1.22rem}
+}
+
+@media (max-width:520px){
+  footer{line-height:2.2;margin-top:48px;padding:30px 16px 44px}
+  .footer-links{gap:10px 18px;margin-bottom:24px;padding-bottom:22px}
+  .logo{font-size:2rem;letter-spacing:6px}
+  .lp-hero h1{font-size:1.6rem}
+  .grid,.trust{grid-template-columns:1fr}
+  .related{grid-template-columns:1fr}
+  .card img{height:220px}
+  h1{font-size:1.6rem}
+
+  /* Full-width CTAs — bigger tap targets, no awkward two-line wrapping */
+  .container{padding:20px 16px}
+  .lp-actions{gap:10px}
+  .lp-actions .btn,.hero-actions .btn{width:100%;text-align:center}
+  .hero-actions{gap:10px}
+
+  /* Comparison tables stay legible rather than squeezing three prose columns */
+  .spec{font-size:.82rem}
+  .spec th,.spec td{padding:8px 6px}
+  .spec th{font-size:.68rem;letter-spacing:0}
+
+  .prose,.lp-sub{max-width:100%}
+  .section{padding:36px 0}
+  .faq details{padding:12px 14px}
+  .trust div{padding:13px}
+}
+
+/* Very small phones (320–360px): stop long strings forcing sideways scroll */
+@media (max-width:360px){
+  .brand .title{font-size:.82rem;letter-spacing:1px}
+  .brand img{width:34px;height:34px}
+  .logo{font-size:1.7rem;letter-spacing:4px}
+  .lp-hero h1{font-size:1.42rem}
+  .social a{width:40px;height:40px;font-size:.94rem}
+  .callbar a{font-size:.86rem;padding:11px 8px}
+}
